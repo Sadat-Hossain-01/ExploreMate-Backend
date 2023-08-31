@@ -15,9 +15,9 @@ const connection = {
 };
 const db = pgp(connection);
 
-app.get('/', async (req, res) => {
+app.get('/recom', async (req, res) => {
   try {
-    const data = await db.any('SELECT * FROM dummy');
+    const data = await db.any('SELECT * FROM "City"');
     res.json(data);
   } catch (error) {
     console.error(error);
