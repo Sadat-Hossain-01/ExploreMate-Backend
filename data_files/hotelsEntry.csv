@@ -1,0 +1,30 @@
+HotelID,HotelName,city_id,low,mid,high
+1,Hotel Rose View,1,28,50,80
+2,Richmond Hotel,1,25,36,55
+3,Grand Palace ,1,15,24,35
+4,Hotel Star Pacific,1,30,55,72
+5,La Vista Hotel,1,29,45,65
+6,All Season Lodge,1,-1,45,-1
+7,Nazimgarh Garden Resort,1,-1,30,60
+8,The Palace,2,-1,35,75
+9,Hotel Valley Garden,1,12,28,44
+10,Nirvana Inn,1,12,20,30
+11,Hotel Oriental,1,8,18,27
+12,Rangauti Resort,4,-1,35,60
+13,Tea Heaven Resort,4,14,27,39
+14,Hotel Skypark,4,12,22,35
+15,Jungle Cottage,4,18,-1,-1
+16,Grand Sultan,4,-1,40,70
+17,DuSai Resort,4,15,22,37
+18,Grand Selim Resort,4,12,27,35
+19,Shanti Bari Eco Resort,4,12,-1,-1
+20,Sree Mangal Tea Resort,4,10,20,-1
+21,Novem Eco Resosrt,4,15,25,35
+22,Luthfa Villa,2,17,-1,-1
+23,Meghalaya Vacation Home,3,20,-1,-1
+24,Bottom Hill Palace Hotel,1,-1,23,48
+25,Hotel Noorjahan Grand,1,14,30,50
+26,Hotel Supreme,1,15,23,45
+27,Britannia Hotel & Retsaurant,1,12,24,40
+28,Farmis Garden,1,10,20,32
+29,Treetop Adventure Farm,1,15,30,40
