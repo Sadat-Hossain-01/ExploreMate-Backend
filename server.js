@@ -1,20 +1,12 @@
 const express = require('express')
 require('dotenv').config()
-const pgp = require('pg-promise')()
 
 const app = express()
 app.use(express.json())
 const port = process.env.PORT || 3000
 
-const connection = {
-  host: process.env.SUPABASEHOST,
-  port: process.env.SUPABASEPORT,
-  database: process.env.SUPABASEDATABASE,
-  user: process.env.SUPABASEUSER,
-  password: process.env.SUPABASEPASSWORD,
-  ssl: { rejectUnauthorized: false },
-};
-const db = pgp(connection);
+const db = require('./db');
+const destination_route = require('./routes/destination');
 
 app.get('/recom', async (req, res) => {
   try {
@@ -45,3 +37,5 @@ app.post('/city', async (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+app.use('/destination', destination_route);
