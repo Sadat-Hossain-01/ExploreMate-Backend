@@ -1,5 +1,6 @@
 const express = require('express')
 require('dotenv').config()
+const cors = require('cors')
 
 const app = express()
 app.use(express.json())
@@ -7,6 +8,10 @@ const port = process.env.PORT || 3000
 
 const db = require('./db');
 const destination_route = require('./routes/destination');
+
+app.use(cors({
+  origin: "*",
+}))
 
 app.get('/recom', async (req, res) => {
   try {
