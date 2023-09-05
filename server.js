@@ -29,7 +29,6 @@ app.get('/recom', async (req, res) => {
 app.post('/city', async (req, res) => {
   try {
     const city = req.body['city'];
-    console.log(req.body);
     const data = await db.any('select * from "Destination" \
                                 where city_id = (select id from "City" \
                                 where name = $1);', [city]);
