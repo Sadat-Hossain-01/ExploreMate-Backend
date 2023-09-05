@@ -88,29 +88,15 @@ df5 = df5.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
 # create a new column city_id and enter the city_id of the city from df3
 df5['city_id'] = df5['city'].map(df3.set_index('City')['CityID'])
 
-# add three columns breakfast_low, breakfast_mid, breakfast_high
-# if class is '$' breakfast_low is random in between 0.5 and 1.5, breakfast_mid is random in between 1.5 and 2.5, breakfast_high is random in between 2.5 and 3.5
-# if class is '$$' breakfast_low is random in between 1.5 and 2.5, breakfast_mid is random in between 2.5 and 3.5, breakfast_high is random in between 3.5 and 4.5
-# if class is '$$$' breakfast_low is random in between 2.5 and 3.5, breakfast_mid is random in between 3.5 and 4.5, breakfast_high is random in between 4.5 and 5.5
+df5['breakfast'] = df5['class'].apply(lambda x: round(random.uniform(0.5, 1.5), 1) if x == '$' else round(random.uniform(1.5, 2.5), 1) if x == '$$' else round(random.uniform(2.5, 3.5), 1))
+df5['lunch'] = df5['class'].apply(lambda x: round(random.uniform(1.2, 2.0), 1) if x == '$' else round(random.uniform(2.0, 3.0), 1) if x == '$$' else round(random.uniform(3.0, 8.0), 1))
+df5['dinner'] = df5['class'].apply(lambda x: round(random.uniform(1.0, 2.0), 1) if x == '$' else round(random.uniform(2.0, 3.0), 1) if x == '$$' else round(random.uniform(3.0, 12.0), 1))
 
-df5['breakfast_low'] = df5['class'].apply(lambda x: round(random.uniform(0.5, 1.5), 1) if x == '$' else round(random.uniform(1.5, 2.5), 1) if x == '$$' else round(random.uniform(2.5, 3.5), 1))
-df5['breakfast_mid'] = df5['class'].apply(lambda x: round(random.uniform(1.5, 2.5), 1) if x == '$' else round(random.uniform(2.5, 3.5), 1) if x == '$$' else round(random.uniform(3.5, 4.5), 1))
-df5['breakfast_high'] = df5['class'].apply(lambda x: round(random.uniform(2.5, 3.5), 1) if x == '$' else round(random.uniform(3.5, 4.5), 1) if x == '$$' else round(random.uniform(4.5, 5.5), 1))
+# add a column rating, is class in '$', rating is between 2.21 and 4.89, if class is '$$', rating is between 4.21 and 6.89, if class is '$$$', rating is between 6.21 and 8.89
+df5['rating'] = df5['class'].apply(lambda x: round(random.uniform(2.61, 4.56), 2) if x == '$' else round(random.uniform(3.10, 4.72), 2) if x == '$$' else round(random.uniform(4.51, 4.98), 2))
+df5['rating_count'] = df5['id'].apply(lambda x: random.randint(100, 1200))
 
-# do same for lunch and dinner
-df5['lunch_low'] = df5['class'].apply(lambda x: round(random.uniform(0.5, 1.5), 1) if x == '$' else round(random.uniform(1.5, 2.5), 1) if x == '$$' else round(random.uniform(2.5, 3.5), 1))
-df5['lunch_mid'] = df5['class'].apply(lambda x: round(random.uniform(1.5, 2.5), 1) if x == '$' else round(random.uniform(2.5, 3.5), 1) if x == '$$' else round(random.uniform(3.5, 4.5), 1))
-df5['lunch_high'] = df5['class'].apply(lambda x: round(random.uniform(2.5, 3.5), 1) if x == '$' else round(random.uniform(3.5, 4.5), 1) if x == '$$' else round(random.uniform(4.5, 5.5), 1))
-
-df5['dinner_low'] = df5['class'].apply(lambda x: round(random.uniform(0.5, 1.5), 1) if x == '$' else round(random.uniform(1.5, 2.5), 1) if x == '$$' else round(random.uniform(2.5, 3.5), 1))
-df5['dinner_mid'] = df5['class'].apply(lambda x: round(random.uniform(1.5, 2.5), 1) if x == '$' else round(random.uniform(2.5, 3.5), 1) if x == '$$' else round(random.uniform(3.5, 4.5), 1))
-df5['dinner_high'] = df5['class'].apply(lambda x: round(random.uniform(2.5, 3.5), 1) if x == '$' else round(random.uniform(3.5, 4.5), 1) if x == '$$' else round(random.uniform(4.5, 5.5), 1))
-
-# add a column rating and enter random values between 2.21 and 4.89
-df5['rating'] = df5['id'].apply(lambda x: round(random.uniform(2.21, 4.89), 2))
-df5['rating_count'] = df5['id'].apply(lambda x: random.randint(100, 1000))
-
-df5 = df5[['id', 'name', 'city_id', 'class', 'breakfast_low', 'breakfast_mid', 'breakfast_high', 'lunch_low', 'lunch_mid', 'lunch_high', 'dinner_low', 'dinner_mid', 'dinner_high', 'rating', 'rating_count', 'site_url', 'img_url']]
+df5 = df5[['id', 'name', 'city_id', 'class', 'breakfast','lunch', 'dinner', 'rating', 'rating_count', 'lat', 'lng','site_url', 'img_url']]
 
 df5.to_csv('restaurantsEntry.csv', index=False)
 

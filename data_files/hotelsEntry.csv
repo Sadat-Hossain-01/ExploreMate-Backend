@@ -1,30 +1,30 @@
 HotelID,HotelName,city_id,low,mid,high,star,lat,lng,site_url,img_url
-1,Hotel Rose View,1,28,50,80,3,24.91017,91.94624,https://www.google.com/search?q=Hotel Rose View,https://picsum.photos/200/300?image=1
-2,Richmond Hotel,1,25,36,55,1,24.91272,91.90611,https://www.google.com/search?q=Richmond Hotel,https://picsum.photos/200/300?image=2
-3,Grand Palace,1,15,24,35,1,24.93914,91.86019,https://www.google.com/search?q=Grand Palace,https://picsum.photos/200/300?image=3
-4,Hotel Star Pacific,1,30,55,72,2,24.94604,91.8791,https://www.google.com/search?q=Hotel Star Pacific,https://picsum.photos/200/300?image=4
-5,La Vista Hotel,1,29,45,65,5,24.88939,91.87987,https://www.google.com/search?q=La Vista Hotel,https://picsum.photos/200/300?image=5
-6,All Season Lodge,1,-1,45,-1,5,24.86382,91.94605,https://www.google.com/search?q=All Season Lodge,https://picsum.photos/200/300?image=6
-7,Nazimgarh Garden Resort,1,-1,30,60,1,24.92959,91.93826,https://www.google.com/search?q=Nazimgarh Garden Resort,https://picsum.photos/200/300?image=7
-8,The Palace,2,-1,35,75,5,24.91808,91.89366,https://www.google.com/search?q=The Palace,https://picsum.photos/200/300?image=8
-9,Hotel Valley Garden,1,12,28,44,3,24.93731,91.87846,https://www.google.com/search?q=Hotel Valley Garden,https://picsum.photos/200/300?image=9
-10,Nirvana Inn,1,12,20,30,2,24.91131,91.90068,https://www.google.com/search?q=Nirvana Inn,https://picsum.photos/200/300?image=10
-11,Hotel Oriental,1,8,18,27,2,24.94756,91.86707,https://www.google.com/search?q=Hotel Oriental,https://picsum.photos/200/300?image=11
-12,Rangauti Resort,4,-1,35,60,5,24.93958,91.87968,https://www.google.com/search?q=Rangauti Resort,https://picsum.photos/200/300?image=12
-13,Tea Heaven Resort,4,14,27,39,3,24.91799,91.85786,https://www.google.com/search?q=Tea Heaven Resort,https://picsum.photos/200/300?image=13
-14,Hotel Skypark,4,12,22,35,3,24.92964,91.87579,https://www.google.com/search?q=Hotel Skypark,https://picsum.photos/200/300?image=14
-15,Jungle Cottage,4,18,-1,-1,5,24.89711,91.94445,https://www.google.com/search?q=Jungle Cottage,https://picsum.photos/200/300?image=15
-16,Grand Sultan,4,-1,40,70,4,24.88529,91.87573,https://www.google.com/search?q=Grand Sultan,https://picsum.photos/200/300?image=16
-17,DuSai Resort,4,15,22,37,5,24.93404,91.85178,https://www.google.com/search?q=DuSai Resort,https://picsum.photos/200/300?image=17
-18,Grand Selim Resort,4,12,27,35,2,24.91409,91.90214,https://www.google.com/search?q=Grand Selim Resort,https://picsum.photos/200/300?image=18
-19,Shanti Bari Eco Resort,4,12,-1,-1,5,24.94599,91.94892,https://www.google.com/search?q=Shanti Bari Eco Resort,https://picsum.photos/200/300?image=19
-20,Sree Mangal Tea Resort,4,10,20,-1,3,24.92066,91.87597,https://www.google.com/search?q=Sree Mangal Tea Resort,https://picsum.photos/200/300?image=20
-21,Novem Eco Resosrt,4,15,25,35,3,24.86042,91.86573,https://www.google.com/search?q=Novem Eco Resosrt,https://picsum.photos/200/300?image=21
-22,Luthfa Villa,2,17,-1,-1,3,24.86311,91.93923,https://www.google.com/search?q=Luthfa Villa,https://picsum.photos/200/300?image=22
-23,Meghalaya Vacation Home,3,20,-1,-1,5,24.9408,91.94619,https://www.google.com/search?q=Meghalaya Vacation Home,https://picsum.photos/200/300?image=23
-24,Bottom Hill Palace Hotel,1,-1,23,48,5,24.90394,91.93101,https://www.google.com/search?q=Bottom Hill Palace Hotel,https://picsum.photos/200/300?image=24
-25,Hotel Noorjahan Grand,1,14,30,50,2,24.89093,91.90028,https://www.google.com/search?q=Hotel Noorjahan Grand,https://picsum.photos/200/300?image=25
-26,Hotel Supreme,1,15,23,45,1,24.94351,91.91654,https://www.google.com/search?q=Hotel Supreme,https://picsum.photos/200/300?image=26
-27,Britannia Hotel & Retsaurant,1,12,24,40,5,24.93109,91.911,https://www.google.com/search?q=Britannia Hotel & Retsaurant,https://picsum.photos/200/300?image=27
-28,Farmis Garden,1,10,20,32,2,24.94121,91.89449,https://www.google.com/search?q=Farmis Garden,https://picsum.photos/200/300?image=28
-29,Treetop Adventure Farm,1,15,30,40,5,24.92916,91.87295,https://www.google.com/search?q=Treetop Adventure Farm,https://picsum.photos/200/300?image=29
+1,Hotel Rose View,1,28,50,80,2,24.88459,91.89608,https://www.google.com/search?q=Hotel Rose View,https://picsum.photos/200/300?image=1
+2,Richmond Hotel,1,25,36,55,4,24.92078,91.91357,https://www.google.com/search?q=Richmond Hotel,https://picsum.photos/200/300?image=2
+3,Grand Palace,1,15,24,35,1,24.91424,91.90952,https://www.google.com/search?q=Grand Palace,https://picsum.photos/200/300?image=3
+4,Hotel Star Pacific,1,30,55,72,4,24.88763,91.94963,https://www.google.com/search?q=Hotel Star Pacific,https://picsum.photos/200/300?image=4
+5,La Vista Hotel,1,29,45,65,1,24.86207,91.85993,https://www.google.com/search?q=La Vista Hotel,https://picsum.photos/200/300?image=5
+6,All Season Lodge,1,-1,45,-1,5,24.88079,91.90809,https://www.google.com/search?q=All Season Lodge,https://picsum.photos/200/300?image=6
+7,Nazimgarh Garden Resort,1,-1,30,60,2,24.89224,91.94002,https://www.google.com/search?q=Nazimgarh Garden Resort,https://picsum.photos/200/300?image=7
+8,The Palace,2,-1,35,75,5,24.86817,91.88028,https://www.google.com/search?q=The Palace,https://picsum.photos/200/300?image=8
+9,Hotel Valley Garden,1,12,28,44,2,24.92037,91.88846,https://www.google.com/search?q=Hotel Valley Garden,https://picsum.photos/200/300?image=9
+10,Nirvana Inn,1,12,20,30,3,24.91619,91.89264,https://www.google.com/search?q=Nirvana Inn,https://picsum.photos/200/300?image=10
+11,Hotel Oriental,1,8,18,27,2,24.89961,91.85041,https://www.google.com/search?q=Hotel Oriental,https://picsum.photos/200/300?image=11
+12,Rangauti Resort,4,-1,35,60,3,24.89779,91.89084,https://www.google.com/search?q=Rangauti Resort,https://picsum.photos/200/300?image=12
+13,Tea Heaven Resort,4,14,27,39,1,24.87619,91.88272,https://www.google.com/search?q=Tea Heaven Resort,https://picsum.photos/200/300?image=13
+14,Hotel Skypark,4,12,22,35,1,24.88077,91.85897,https://www.google.com/search?q=Hotel Skypark,https://picsum.photos/200/300?image=14
+15,Jungle Cottage,4,18,-1,-1,2,24.90195,91.94256,https://www.google.com/search?q=Jungle Cottage,https://picsum.photos/200/300?image=15
+16,Grand Sultan,4,-1,40,70,3,24.87657,91.92242,https://www.google.com/search?q=Grand Sultan,https://picsum.photos/200/300?image=16
+17,DuSai Resort,4,15,22,37,3,24.85042,91.88689,https://www.google.com/search?q=DuSai Resort,https://picsum.photos/200/300?image=17
+18,Grand Selim Resort,4,12,27,35,5,24.8723,91.94514,https://www.google.com/search?q=Grand Selim Resort,https://picsum.photos/200/300?image=18
+19,Shanti Bari Eco Resort,4,12,-1,-1,5,24.85121,91.87221,https://www.google.com/search?q=Shanti Bari Eco Resort,https://picsum.photos/200/300?image=19
+20,Sree Mangal Tea Resort,4,10,20,-1,3,24.88041,91.92365,https://www.google.com/search?q=Sree Mangal Tea Resort,https://picsum.photos/200/300?image=20
+21,Novem Eco Resosrt,4,15,25,35,5,24.94257,91.92432,https://www.google.com/search?q=Novem Eco Resosrt,https://picsum.photos/200/300?image=21
+22,Luthfa Villa,2,17,-1,-1,3,24.86184,91.88509,https://www.google.com/search?q=Luthfa Villa,https://picsum.photos/200/300?image=22
+23,Meghalaya Vacation Home,3,20,-1,-1,3,24.9395,91.8753,https://www.google.com/search?q=Meghalaya Vacation Home,https://picsum.photos/200/300?image=23
+24,Bottom Hill Palace Hotel,1,-1,23,48,2,24.85005,91.92064,https://www.google.com/search?q=Bottom Hill Palace Hotel,https://picsum.photos/200/300?image=24
+25,Hotel Noorjahan Grand,1,14,30,50,2,24.86547,91.89893,https://www.google.com/search?q=Hotel Noorjahan Grand,https://picsum.photos/200/300?image=25
+26,Hotel Supreme,1,15,23,45,3,24.88213,91.86686,https://www.google.com/search?q=Hotel Supreme,https://picsum.photos/200/300?image=26
+27,Britannia Hotel & Retsaurant,1,12,24,40,2,24.85339,91.9331,https://www.google.com/search?q=Britannia Hotel & Retsaurant,https://picsum.photos/200/300?image=27
+28,Farmis Garden,1,10,20,32,1,24.92933,91.89558,https://www.google.com/search?q=Farmis Garden,https://picsum.photos/200/300?image=28
+29,Treetop Adventure Farm,1,15,30,40,4,24.93684,91.85559,https://www.google.com/search?q=Treetop Adventure Farm,https://picsum.photos/200/300?image=29
