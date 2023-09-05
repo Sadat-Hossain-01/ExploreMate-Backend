@@ -28,10 +28,16 @@ app.get('/recom', async (req, res) => {
 
 app.post('/city', async (req, res) => {
   try {
-    const city = req.body['city'];
-    const data = await db.any('select * from "Destination" \
-                                where city_id = (select id from "City" \
-                                where name = $1);', [city]);
+    const city = req.body['cities'];
+    let query = 'select * from "Destination" where city_id in (select id from "City" where name in (';
+    for(let i = 0; i < city.length; i++) {
+      query += `'${city[i]}'`;
+      if(i != city.length - 1) {
+        query += ', ';
+      }
+    }
+    query += '));';
+    const data = await db.any(query);
     res.json(data);
   } catch (error) {
     console.error(error);
