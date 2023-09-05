@@ -33,8 +33,8 @@ router.post('/activity', async (req, res) => {
       }
     }
     query += '));';
-    console.log(query);
     const data = await db.any(query);
+    res.json(data);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
