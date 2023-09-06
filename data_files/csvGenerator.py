@@ -100,4 +100,30 @@ df5 = df5[['id', 'name', 'city_id', 'class', 'breakfast','lunch', 'dinner', 'rat
 
 df5.to_csv('restaurantsEntry.csv', index=False)
 
+# create a dataframe for AvailableHotels, if city_id of df4 and df3 matches, enter the hotel_id and destination_id in the dataframe, use concat() method
+df6 = pd.DataFrame(columns=['hotel_id', 'destination_id'])
+# check for each hotel and each destination in nested loop, if the city_id matches, enter the hotel_id and destination_id in the dataframe
+for i in range(1, len(df2) + 1):
+    for j in range(1, len(df4) + 1):
+        if df2['CityID'][i - 1] == df4['city_id'][j - 1]:
+            # if hotel id is 23, continue
+            if j == 23:
+                continue
+                
+            df6 = pd.concat([df6, pd.DataFrame([[j, i]], columns=['hotel_id', 'destination_id'])])
+
+df6.to_csv('availableHotelsEntry.csv', index=False)
+
+# do the same thing with restaurants
+df7 = pd.DataFrame(columns=['restaurant_id', 'destination_id'])
+for i in range(1, len(df2) + 1):
+    for j in range(1, len(df5) + 1):
+        if df2['CityID'][i - 1] == df5['city_id'][j - 1]:
+            df7 = pd.concat([df7, pd.DataFrame([[j, i]], columns=['restaurant_id', 'destination_id'])])
+
+df7.to_csv('availableRestaurantsEntry.csv', index=False)
+
+
+
+
 
