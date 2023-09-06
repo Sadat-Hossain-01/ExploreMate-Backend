@@ -122,6 +122,17 @@ router.post('/restaurant', async (req, res) => {
   }
 })
 
+app.post('/cityhotel', async (req, res) => {
+  try {
+    const city = req.body['city_id'];
+    const star = req.body['star'];
+    const data = await db.any('select * from "Hotel" where city_id = ' + city + ' and star = ' + star);
+    res.json(data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
